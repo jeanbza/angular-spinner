@@ -1,3 +1,4 @@
-.yellow-thing {
-    background-color: yellow;
+mat-spinner {
+    display: inline;
+    padding-right: 24px;
 }

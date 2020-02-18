@@ -1,2 +1,11 @@
-<div class="yellow-thing">Hello world</div>
-<mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+<button mat-button (click)="onClickMe()">Change state</button>
+
+<button mat-button>
+    <ng-container *ngIf="loading">
+        <mat-icon>home</mat-icon>
+    </ng-container>
+    <ng-container *ngIf="!loading">
+        <mat-spinner [diameter]="15"></mat-spinner>
+    </ng-container>
+    <span class="space-left">Click me!</span>
+</button>
